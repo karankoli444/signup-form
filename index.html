@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/signup-form/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="pop-up">
+          <h1>  Your Registration SucessFully. <span id="sucess-tik"> ✅︎</span></h1>
+        </div>
+        <div class="sign-up">
+          <div class="image">            <img src="/signup-form/images/brainstorm-meeting.jpg" alt="" width="550px" height="400px" loading="lazy">
+          </div>
+          <div class="form-section">
+            <h2>Wel come to Coding School !</h2>
+            <form action="" onsubmit="return valdiateForm()">
+              <div class="input-field">
+                <input type="text" placeholder="Full Name" required id="user-name">
+              </div>
+              <div class="input-field">
+                <input type="email" placeholder=" Email Adress*" required id="user-email">
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Create Password*" required id="password">
+                <p id="error-msg"></p>
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Confirm Password*" required id="confirm-password">
+                <p id="error2-msg"></p>
+              </div>
+              <div class="input-field" id="checkbox-section">
+                <input type="checkbox" required><span>I agree to the terms and conditions</span>
+              </div>
+      <div class="input-field">
+        <button class="submit-btn">Register Now</button>
+      </div>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <script src="/signup-form/script.js"></script>
+</body>
+</html>
